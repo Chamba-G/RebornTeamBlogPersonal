@@ -1,0 +1,359 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; /* Buenas prácticas para evitar desbordes */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#header {
+	margin: auto;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.encabezado {
+	position: relative;
+	z-index: 10;
+	height: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 20px;
+	background: linear-gradient(to right, rgb(78, 0, 0), rgb(247, 18, 18));
+}
+
+h1 {
+	font-family: papyrus;
+	word-spacing: 10px;
+	letter-spacing: 15px;
+	font-size: 45px;
+}
+.titulo-logo {
+	text-align: left;
+	color: rgb(255, 123, 62);
+	padding-left: 110px;
+}
+
+.logo-izquierda {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 90px; 
+}
+
+ul, ol {
+	list-style: none;
+}
+
+.nav {
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+.nav > li {
+	position: relative;
+}
+
+.nav li a {
+	background-color: black;
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	padding: 10px 12px;
+	display: block;
+}
+
+.nav li a:hover {
+	background-color: #434343;
+}
+
+.nav li ul {
+	display: none;
+	position: absolute;
+	min-width: 140px;
+}
+
+.nav li:hover > ul {
+	display: block;
+}
+
+.nav li ul li {
+	position: relative;
+}
+
+.nav li ul li ul {
+	right: -140px;
+	top: 0;
+}
+
+body {
+background-image: linear-gradient(rgba(255, 0, 0, 0.342), rgba(255, 0, 0, 0.342)), url(BGBLACK.png);
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+}
+
+.bienvenida h2 {
+	color: rgb(231, 231, 231);
+	text-shadow: 0 0 5px red, 0 0 10px red, 0 0 20px red;
+	letter-spacing: 5px;
+	word-spacing: 10px;
+	text-align: left;
+	font-size: 45px;
+	padding-top: 100px;
+	padding-left: 200px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.bienvenida h3 {
+	color: rgb(211, 211, 211);
+	letter-spacing: 5px;
+	font-size: 25px;
+	padding-left: 200px;
+	padding-top: 20px;
+}
+
+.bienvenida p {
+	color: rgb(201, 201, 201);
+	letter-spacing: normal;
+	font-size: 20px;
+	padding-left: 200px;
+	padding-top: 50px;
+}
+
+.bienvenida img {
+  position: absolute;
+  z-index: 1;
+  left: 1400px;
+  top: 45%;
+  transform: translateY(-50%);
+  height: 400px; 
+}
+
+.proyectos h2 {
+	color: white;
+	text-shadow: 0 0 5px red, 0 0 10px red, 0 0 20px red;
+	letter-spacing: 5px;
+	font-size: 40px;
+	padding-left: 200px;
+	padding-top: 300px;
+}
+
+.prpsycho h3 {
+	color: rgb(231, 231, 231);
+	letter-spacing: 5px;
+	font-size: 30px;
+	padding-left: 200px;
+	padding-top: 50px;
+}
+
+.prpsycho p {
+	color: rgb(201, 201, 201);
+	letter-spacing: normal;
+	font-size: 25px;
+	padding-left: 550px;
+	padding-top: 30px;
+}
+
+.prpsycho img {
+    position: absolute;
+    left: 200px;
+    transform: translateY(-70%);
+    height: 300px; 
+}
+
+.prpsycho button {
+	position: absolute;
+	background-color: black;
+	color: white;
+	box-shadow: 0 0 2px red, 0 0 4px red, 0 0 8px red;
+	left: 550px;
+	border: none;
+	padding: 15px 30px;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+.prpsycho button:hover {
+	background-color: red;
+	transform: scale(1.1);
+}
+
+.persona1 h3 {
+	color: rgb(231, 231, 231);
+	letter-spacing: 5px;
+	font-size: 30px;
+	padding-left: 200px;
+	padding-top: 150px;
+}
+
+.persona1 p {
+	color: rgb(201, 201, 201);
+	letter-spacing: normal;
+	font-size: 25px;
+	padding-left: 850px;
+	padding-top: 30px;
+}
+
+.persona1 img {
+	position: absolute;
+    left: 200px;
+    transform: translateY(-90%);
+    height: 300px; 
+}
+
+.persona1 button {
+	position: absolute;
+	background-color: black;
+	color: white;
+	box-shadow: 0 0 2px purple, 0 0 4px purple, 0 0 8px purple;
+	left: 850px;
+	border: none;
+	padding: 15px 30px;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+.persona1 button:hover {
+	background-color: rgb(204, 0, 204);
+	transform: scale(1.1);
+}
+
+.slentT h3 {
+	color: rgb(231, 231, 231);
+	letter-spacing: 5px;
+	font-size: 30px;
+	padding-left: 200px;
+	padding-top: 100px;
+}
+
+.slentT p {
+	color: rgb(201, 201, 201);
+	letter-spacing: normal;
+	font-size: 25px;
+	padding-left: 550px;
+	padding-top: 30px;
+}
+
+.slentT img {
+	position: absolute;
+    left: 200px;
+    transform: translateY(-80%);
+    height: 300px; 
+}
+
+.slentT button {
+	position: absolute;
+	background-color: black;
+	color: white;
+	box-shadow: 0 0 2px greenyellow, 0 0 4px greenyellow, 0 0 8px greenyellow;
+	left: 550px;
+	border: none;
+	padding: 15px 30px;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+.slentT button:hover {
+	background-color: rgb(0, 221, 0);
+	transform: scale(1.1);
+}
+
+.astro h3 {
+	color: rgb(231, 231, 231);
+	letter-spacing: 5px;
+	font-size: 30px;
+	padding-left: 200px;
+	padding-top: 150px;
+}
+
+.astro p {
+	color: rgb(201, 201, 201);
+	letter-spacing: normal;
+	font-size: 25px;
+	padding-left: 550px;
+	padding-top: 30px;
+}
+
+.astro img {
+	position: absolute;
+    left: 200px;
+    transform: translateY(-75%);
+    height: 300px; 
+}
+
+.astro button {
+	position: absolute;
+	background-color: black;
+	color: white;
+	box-shadow: 0 0 2px rgb(0, 132, 255), 0 0 4px rgb(0, 132, 255), 0 0 8px rgb(0, 132, 255);
+	left: 550px;
+	border: none;
+	padding: 15px 30px;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+.astro button:hover {
+	background-color: blue;
+	transform: scale(1.1);
+}
+
+.contacto h2 {
+	color: white;
+	text-shadow: 0 0 5px red, 0 0 10px red, 0 0 20px red;
+	letter-spacing: 5px;
+	font-size: 40px;
+	padding-left: 200px;
+	padding-top: 300px;
+}
+
+.contacto form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-left: 200px;
+  gap: 10px;
+  max-width: 600px;
+}
+
+.contacto input, textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contacto button {
+  background-color: #ff4545;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pie {
+	background: linear-gradient(to right, rgb(78, 0, 0), rgb(247, 18, 18));
+}
+
+.pie div {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.pie p {
+	text-align: center;
+	padding-top: 40px;
+}
+
+.pie a {
+	font-size: 30px;
+	color: rgb(255, 255, 255);
+}

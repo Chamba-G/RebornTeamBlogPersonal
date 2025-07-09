@@ -1,0 +1,125 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; /* Buenas prácticas para evitar desbordes */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#header {
+	margin: auto;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.encabezado {
+	position: relative;
+	z-index: 10;
+	height: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 20px;
+	background: linear-gradient(to right, rgb(78, 0, 0), rgb(247, 18, 18));
+}
+
+h1 {
+	font-family: papyrus;
+	word-spacing: 10px;
+	letter-spacing: 15px;
+	font-size: 45px;
+}
+.titulo-logo {
+	text-align: left;
+	color: rgb(255, 123, 62);
+	padding-left: 110px;
+}
+
+.logo-izquierda {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 90px; 
+}
+
+ul, ol {
+	list-style: none;
+}
+
+.nav {
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+.nav > li {
+	position: relative;
+}
+
+.nav li a {
+	background-color: black;
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	padding: 10px 12px;
+	display: block;
+}
+
+.nav li a:hover {
+	background-color: #434343;
+}
+
+.nav li ul {
+	display: none;
+	position: absolute;
+	min-width: 140px;
+}
+
+.nav li:hover > ul {
+	display: block;
+}
+
+.nav li ul li {
+	position: relative;
+}
+
+.nav li ul li ul {
+	right: -140px;
+	top: 0;
+}
+
+body {
+background-image: linear-gradient(rgba(255, 0, 0, 0.342), rgba(255, 0, 0, 0.342)), url(BGBLACK.png);
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+}
+
+
+
+
+
+
+.pie {
+	background: linear-gradient(to right, rgb(78, 0, 0), rgb(247, 18, 18));
+}
+
+.pie div {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.pie p {
+	text-align: center;
+	padding-top: 40px;
+}
+
+.pie a {
+	font-size: 30px;
+	color: rgb(255, 255, 255);
+}
