@@ -122,7 +122,8 @@ background-attachment: fixed;
   left: 1400px;
   top: 45%;
   transform: translateY(-50%);
-  height: 400px; 
+  height: 300px; 
+  border-radius: 50px;
 }
 
 .inicios h2 {
@@ -228,6 +229,7 @@ background-attachment: fixed;
   padding: 10px;
   border: none;
   border-radius: 5px;
+  background-color: black;
 }
 
 .contacto button {
@@ -255,6 +257,7 @@ background-attachment: fixed;
 .pie p {
 	text-align: center;
 	padding-top: 40px;
+	color: white;
 }
 
 .pie a {

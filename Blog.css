@@ -24,6 +24,10 @@ html {
 	background: linear-gradient(to right, rgb(78, 0, 0), rgb(247, 18, 18));
 }
 
+a {
+	color: white;
+}
+
 h1 {
 	font-family: papyrus;
 	word-spacing: 10px;
@@ -113,7 +117,7 @@ background-attachment: fixed;
 
 .buscador button {
 	padding: 10px 20px;
-	background-color: red;
+	background-color: rgb(211, 0, 0);
 	color: white;
 	border: none;
 	border-radius: 5px;
@@ -193,6 +197,7 @@ background-attachment: fixed;
 .pie p {
 	text-align: center;
 	padding-top: 40px;
+	color: white;
 }
 
 .pie a {
